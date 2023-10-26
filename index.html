@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:wght@500&family=Nanum+Gothic:wght@700&family=Nunito:ital,wght@1,300&family=Oswald:wght@300&family=Pathway+Extreme:wght@100&family=Playpen+Sans&family=Quicksand:wght@300&display=swap');
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        nav 
+        {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            gap: 20px;
+            background-color: black;
+        }
+        nav a{
+               text-decoration: none;
+               color: white;
+        }
+        nav h2
+        {
+            color: beige;
+        }
+        .tpc img
+        {
+          
+            width: 1360px;
+            height: 600px;
+           
+        }
+        #contain
+        {  padding: 30px;
+            margin: 30px;
+            width: 1200px;
+            
+            display: grid;
+            display: flex;
+  flex-wrap: wrap;
+            justify-content: center;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+            gap: 40px;
+            
+        }
+        .sub 
+        {
+            width: 200px;
+            background-color: rgb(234, 235, 235);
+            box-shadow: 10px 10px 5px gray;
+            gap: 20px;
+           border-radius: 10px;
+           font-family: 'Kenia', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+
+
+font-family: 'Playpen Sans', cursive;
+font-family: 'Quicksand', sans-serif;
+        }
+        .sub img
+        {
+            width: 200px;
+            overflow: scroll;
+        }
+        .sub button
+        {
+            width: 100px;
+            border: none;
+            height: 40px;
+            background-color:orange;
+            border-radius: 30px;
+            color:white;
+         
+        }
+        .tpc h1
+        {
+            position: absolute;
+            color: beige;
+            top: 300px;
+            font-size: 80px;
+            left: 50px;
+            
+        }
+        ion-icon
+        {
+            color: aliceblue;
+            font-size: 20px;
+        }
+   .review 
+   {
+    width:400px;
+    padding: 0px;
+    margin-left: 40px;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 30px;
+    overflow: hidden;
+    
+   }
+   .review img
+   {
+    width: 100%;
+
+   }
+   #n 
+   {
+    display: flex;
+   }
+   #dea 
+   {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+   }
+   #dea label
+   {
+    color: aliceblue;
+    font-family: 'Pathway Extreme', sans-serif;
+   }
+   #dea input
+   {
+    width: 300px;
+    height: 50px;
+padding-left: 10px;
+   }
+
+   #dea button
+   {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: orange;
+   }
+   @media only screen and (max-width: 600px) {
+  body {
+    
+ 
+  }
+  nav {
+    display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap:10px;
+            background-color: rgb(209, 57, 57);
+            font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+  }
+  nav h2{
+      display: none;
+  }
+  .tpc img
+        {
+          
+            width: 100%;
+            height: 600px;
+           
+        }
+        .tpc h1
+        {
+            position: absolute;
+            color: beige;
+            top: 300px;
+            font-size: 40px;
+            left: 20px;
+            
+        }
+        #contain
+        { 
+            width: 100px;
+}
+
+        
+        .sub img
+        {
+            width: 200px;
+            overflow: scroll;
+        }
+h5 {
+    display: none;
+}
+.review 
+   {
+    width:300px;
+    padding: 0px;
+    margin-left: 40px;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding-top: 20px;
+    column-gap: 50px;
+
+    
+   }
+   .review img
+   {
+    width: 100%;
+
+   }
+   #n 
+   { display: grid;
+    
+
+   }
+   .review p {
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: center;
+   }
+    }
+
+    </style>
+    <nav>
+        <h2 style="position: absolute;left: 10px;top: 22px;">Locopizza</h2>
+        <a href=""><ol>Loco</ol></a>
+        <a href=""><ol>Home</ol></a>
+        <a href="#contain"><ol>Orders</ol></a>
+        <a href="#n"><ol>About</ol></a>
+        <a href="#dea"><ol>Contact</ol></a>
+        <ion-icon name="call"></ion-icon>
+        <ion-icon name="bag" style="position: absolute;right: 30px;"></ion-icon>
+    </nav>
+    <div class="tpc">
+  <img src="piza.jpg">
+  <h1>Welcome <br> to Locopizza</h1>
+    </div>
+    <center>
+        <h1>PROTECT</h1>
+    <div id="contain">
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+        <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        <div class="sub">
+            <img src="p10.jpg">
+            <h3>Mini size pizza</h3>
+            <h4>Price:$20</h4>
+            <br>
+           <center> <a href=""><button>BUY</button></a></center>
+           <br>
+        </div>
+        
+    </div>
+    
+    <h5><-------------------------------------------------->*<-------------------------------------------------></h5>
+
+    
+</center>
+<div id="n">
+<div class="review">
+    <img src="po.jpg">
+    <p>I recently tried New York Pizza and Pasta and was blown away by the quality of the food. The pizza crust was crispy and the toppings were fresh and flavorful.</p>
+</div>
+<div class="review">
+    <img src="po.jpg">
+    <p>The pasta dishes were also delicious. I will definitely be back!</p>
+</div>
+<div class="review">
+    <img src="po.jpg">
+    <p> I will definitely be back!</p>
+</div>
+    </div>
+    <br><br>
+
+    <center>
+    <div id="dea">
+        <br><br>
+   <label> EMAIL:</label> <input type="email" placeholder="Enter Email"><br><br>
+<button onclick="my()">Send</button>   
+</div>
+</center>
+</body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
